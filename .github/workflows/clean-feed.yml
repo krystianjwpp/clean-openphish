@@ -2,7 +2,7 @@ name: Fetch and Clean OpenPhish Feed
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs automatically every day at midnight
+    - cron: '0 0,12 * * *' # Runs automatically every day at midnight
   workflow_dispatch: # Allows manual triggers
 
 jobs:
