@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta name="description" content="OpenPhish provides actionable intelligence data on active phishing threats.">
+<meta http-equiv="refresh" content="300">
+
+<title>OpenPhish - Phishing Intelligence</title>
+<meta http-equiv="refresh" content="300">
+
+<link href='fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="static/table-min.css">
+<link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="static/site.css">
+<script src="static/d3.v3.min.js"></script>
+<script src="static/topojson.v1.min.js"></script>
+<script src="static/datamaps.world.min.js"></script>
+<script src="static/jquery-1.10.2.min.js"></script>
+<script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="wrap" style="padding-top: 20px;">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li style="margin-right:-150px">
+        <a alt="OpenPhish Homepage" href="index.html">
+          <span><img alt="OpenPhish Logo" src="static/openphish_logo2.png" class="logo" /></span>
+        </a>
+      </li>
+        <li>
+          <a alt="OpenPhish Phishing Feed" href="phishing_feeds.html">Phishing Feeds</a>
+      </li>
+        <li>
+          <a alt="OpenPhish Phishing Database" href="phishing_database.html">Phishing Database</a>
+      </li>
+      <li>
+        <a alt="OpenPhish Academic Use Program" href="academic_use.html">Academic Use</a>
+      </li>
+      </ol>
+    </div>
+    </nav>
+      <div class="container">
+        <div class="page-header">
+          <h2 style="text-align: center; font-size: 20px;">Timely. Accurate. Relevant Phishing Intelligence.</h2>
+           <div style="padding-top:10px;text-align:center">
+            <p>
+              <span class="glyphicon glyphicon-stats"> </span> 
+              7-Day Phishing Trends
+            </p>
+          </div>
+           
+<div class="homepage_counter_1" style="width: 33%; margin-top: 10px">
+	<span style="font-size:24px;">3,342,405</span>
+	<p>URLs Processed</p>
+</div>
+<div class="homepage_counter_1" style="width: 33%; margin-top: 10px">
+	<span style="font-size:24px;">4,470</span>
+	<p>New Phishing URLs</p>
+</div>
+<div class="homepage_counter_2" style="width: 33%; margin-top: 10px">
+	<span style="font-size:24px;">171</span>
+	<p>Brands Targeted</p>
+</div>
+        </div>        
+        <div style="padding-top:10px; text-align:center">
+          <p>
+            <span class="glyphicon glyphicon-stats"> </span> 
+            24-Hour Phishing Activity
+          </p>
+        </div>
+      
+<div id="container" 
+  style="position: relative; height: 355px; border: 1px solid #cbcbcb; border-radius: 35px; padding: 19px; background: #fafafa; ">
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="width:33%;">
+  <h2 style="margin-right: auto; text-align: left">Top 10 Targeted Brands</h2>
+  <table class="pure-table brands" style="margin-right: auto;">
+    <tbody>
+  <tr><td class="row_1">Roblox</td><td class="row_2">11.7%</td></tr><tr><td class="row_1">Crypto/Wallet</td><td class="row_2">7.2%</td></tr><tr><td class="row_1">Office365</td><td class="row_2">6.7%</td></tr><tr><td class="row_1">Amazon.com Inc.</td><td class="row_2">6.4%</td></tr><tr><td class="row_1">Netflix Inc.</td><td class="row_2">4.3%</td></tr><tr><td class="row_1">Instagram</td><td class="row_2">3.6%</td></tr><tr><td class="row_1">Meta Platforms, Inc.</td><td class="row_2">3.6%</td></tr><tr><td class="row_1">Adobe Inc.</td><td class="row_2">3.3%</td></tr><tr><td class="row_1">TikTok</td><td class="row_2">3.1%</td></tr><tr><td class="row_1">Comcast Corporation</td><td class="row_2">3.1%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div style="width:33%;">
+<h2 style="text-align: center;">Top 10 Sectors</h2>
+<table class="pure-table brands" style="margin: 0 auto;">
+    <tbody>
+  <tr><td class="row_1">Online/Cloud Service</td><td class="row_2">23.0%</td></tr><tr><td class="row_1">Social Networking</td><td class="row_2">13.4%</td></tr><tr><td class="row_1">Gaming</td><td class="row_2">12.2%</td></tr><tr><td class="row_1">Financial</td><td class="row_2">10.3%</td></tr><tr><td class="row_1">Cryptocurrency</td><td class="row_2">10.3%</td></tr><tr><td class="row_1">e-Commerce</td><td class="row_2">8.9%</td></tr><tr><td class="row_1">Telecommunications</td><td class="row_2">6.0%</td></tr><tr><td class="row_1">Government</td><td class="row_2">4.8%</td></tr><tr><td class="row_1">Logistics & Couriers</td><td class="row_2">3.6%</td></tr><tr><td class="row_1">Gambling</td><td class="row_2">2.9%</td></tr>
+    </tbody>
+</table>
+</div>
+<div style="width:33%;">
+<h2 style="margin-left: auto; text-align: center;">Top 10 ASNs</h2>
+<table class="pure-table brands" style="margin-left: auto;">
+    <tbody>
+       <tr><td class="row_1">AS13335 Cloudflare, Inc.</td><td class="row_2">53.3%</td></tr><tr><td class="row_1">AS16509 Amazon.com, Inc.</td><td class="row_2">8.8%</td></tr><tr><td class="row_1">AS54113 Fastly, Inc.</td><td class="row_2">3.9%</td></tr><tr><td class="row_1">AS27647 Weebly, Inc.</td><td class="row_2">3.2%</td></tr><tr><td class="row_1">AS132203 Tencent Building, Kejizhongyi Avenue</td><td class="row_2">2.5%</td></tr><tr><td class="row_1">AS15169 Google LLC</td><td class="row_2">2.4%</td></tr><tr><td class="row_1">AS31898 Oracle Corporation</td><td class="row_2">1.9%</td></tr><tr><td class="row_1">AS51852 Private Layer INC</td><td class="row_2">1.7%</td></tr><tr><td class="row_1">AS205775 NEON CORE NETWORK LLC</td><td class="row_2">1.4%</td></tr><tr><td class="row_1">AS8075 Microsoft Corporation</td><td class="row_2">1.4%</td></tr>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+<footer class="footer">
+    <div class="container" style="text-align: center;">
+        <p class="text-muted">
+	&copy; OpenPhish |  
+	<a href="kb.html">Knowledge Base</a> |
+	<a href="terms.html">Terms of Use</a> | 
+	<a href="mailto:report@openphish.com">Report Phishing</a> | 
+	<a href="mailto:contact@openphish.com">Contact Us</a>
+	</p>
+      </div>
+
+    </footer>
+
+</div>
+          
+     
+</body>
+</html>
+<script id="gpa-map-pts" type="application/json">[{"country": "Norway", "latitude": 62.0, "longitude": 10.0, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Estonia", "latitude": 59.0, "longitude": 26.0, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Argentina", "latitude": -34.0, "longitude": -64.0, "count": 3, "fillKey": "bubble", "radius": 5},
+{"country": "Switzerland", "latitude": 47.0, "longitude": 8.0, "count": 19, "fillKey": "bubble", "radius": 10},
+{"country": "France", "latitude": 46.0, "longitude": 2.0, "count": 11, "fillKey": "bubble", "radius": 10},
+{"country": "Ireland", "latitude": 53.0, "longitude": -8.0, "count": 4, "fillKey": "bubble", "radius": 5},
+{"country": "India", "latitude": 20.0, "longitude": 77.0, "count": 3, "fillKey": "bubble", "radius": 5},
+{"country": "Finland", "latitude": 64.0, "longitude": 26.0, "count": 3, "fillKey": "bubble", "radius": 5},
+{"country": "Belgium", "latitude": 50.833333, "longitude": 4.0, "count": 2, "fillKey": "bubble", "radius": 5},
+{"country": "Russia", "latitude": 60.0, "longitude": 100.0, "count": 2, "fillKey": "bubble", "radius": 5},
+{"country": "United Arab Emirates", "latitude": 24.0, "longitude": 54.0, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Sweden", "latitude": 62.0, "longitude": 15.0, "count": 2, "fillKey": "bubble", "radius": 5},
+{"country": "Denmark", "latitude": 56.0, "longitude": 10.0, "count": 3, "fillKey": "bubble", "radius": 5},
+{"country": "Slovakia", "latitude": 48.666667, "longitude": 19.5, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Mexico", "latitude": 23.0, "longitude": -102.0, "count": 2, "fillKey": "bubble", "radius": 5},
+{"country": "United States", "latitude": 39.828175, "longitude": -98.5795, "count": 815, "fillKey": "bubble", "radius": 30},
+{"country": "Brazil", "latitude": -10.0, "longitude": -55.0, "count": 5, "fillKey": "bubble", "radius": 5},
+{"country": "Ukraine", "latitude": 49.0, "longitude": 32.0, "count": 2, "fillKey": "bubble", "radius": 5},
+{"country": "Slovenia", "latitude": 46.25, "longitude": 15.166667, "count": 3, "fillKey": "bubble", "radius": 5},
+{"country": "Germany", "latitude": 51.5, "longitude": 10.5, "count": 58, "fillKey": "bubble", "radius": 15},
+{"country": "Singapore", "latitude": 1.366667, "longitude": 103.8, "count": 10, "fillKey": "bubble", "radius": 10},
+{"country": "Netherlands", "latitude": 52.5, "longitude": 5.75, "count": 49, "fillKey": "bubble", "radius": 10},
+{"country": "Hong Kong", "latitude": 22.25, "longitude": 114.166667, "count": 18, "fillKey": "bubble", "radius": 10},
+{"country": "Japan", "latitude": 36.0, "longitude": 138.0, "count": 14, "fillKey": "bubble", "radius": 10},
+{"country": "Australia", "latitude": -25.0, "longitude": 135.0, "count": 5, "fillKey": "bubble", "radius": 5},
+{"country": "United Kingdom", "latitude": 54.0, "longitude": -4.0, "count": 8, "fillKey": "bubble", "radius": 5},
+{"country": "Hungary", "latitude": 47.0, "longitude": 20.0, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Vietnam", "latitude": 16.166667, "longitude": 107.833333, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Philippines", "latitude": 13.0, "longitude": 122.0, "count": 2, "fillKey": "bubble", "radius": 5},
+{"country": "Spain", "latitude": 40.0, "longitude": -4.0, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Indonesia", "latitude": -5.0, "longitude": 120.0, "count": 1, "fillKey": "bubble", "radius": 5},
+{"country": "Italy", "latitude": 42.833333, "longitude": 12.833333, "count": 1, "fillKey": "bubble", "radius": 5}]</script>
+<script>
+var map = new Datamap({
+  element: document.getElementById('container'),
+    scope: 'world',
+    width: 850,
+    height: 325,
+
+    geographyConfig: {
+        popupOnHover: false,
+    highlightOnHover: false
+    },
+    fills: {
+        defaultFill: '#ABDDA4',
+        bubble: '#F96E55',
+    }
+});
+const data_pts = document.getElementById('gpa-map-pts');
+const pts = JSON.parse(data_pts.textContent);
+map.bubbles(pts, {
+        borderWidth: 0,
+          popupTemplate: function(geo, data) {
+            return ['<div class="hoverinfo"><b>' + data.country + '</b>',
+                  '<br/>Phishing URLs: ' +  data.count + '',
+                  '</div>'].join('');
+            }
+      });
+ 
+</script>
