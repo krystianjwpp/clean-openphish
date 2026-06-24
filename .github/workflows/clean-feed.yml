@@ -2,8 +2,8 @@ name: Fetch and Clean OpenPhish Feed
 
 on:
   schedule:
-    - cron: '0 0 * * *' # This runs automatically every day at midnight
-  workflow_dispatch: # This allows you to run it manually
+    - cron: '0 0 * * *' # Runs automatically every day at midnight
+  workflow_dispatch: # Allows manual triggers
 
 jobs:
   build:
@@ -15,13 +15,13 @@ jobs:
 
     - name: Download and Clean OpenPhish Feed
       run: |
-        # Download the plain text community feed via raw source mirror
-        curl -s "https://githubusercontent.com" | grep -oE "https?://[a-zA-Z0-9./_-]+" > raw_list.txt || curl -s https://openphish.com/feed.txt -o raw_list.txt
+        # Download data, forcing curl to follow HTTP redirects (-L)
+        curl -sSL "https://githubusercontent.com" -o raw_list.txt || curl -sSL https://openphish.com/feed.txt -o raw_list.txt
         
-        # Clean it by removing http:// and https:// prefixes
+        # Strip protocols out
         sed -e 's~http://~~g' -e 's~https://~~g' raw_list.txt > edl-list.txt
         
-        # Clean up temporary files
+        # Clean up files
         rm -f raw_list.txt
 
     - name: Commit and Push Cleaned List
